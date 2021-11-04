@@ -16,7 +16,7 @@ class DEMO_API AMyGameState : public AGameStateBase
 
 public: 
 
-	UPROPERTY()
+	UPROPERTY(BlueprintReadWrite)
 	int Score;
 	
 };

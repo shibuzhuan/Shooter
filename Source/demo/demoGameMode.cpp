@@ -33,5 +33,5 @@ void AdemoGameMode::Tick(float DeltaSeconds)
 
 void AdemoGameMode::OnVictory_Implementation() 
 {
-	GEngine->AddOnScreenDebugMessage(0, 5.0f, FColor::Yellow, TEXT("Hello world"));
+	//GEngine->AddOnScreenDebugMessage(0, 5.0f, FColor::Yellow, TEXT("Hello world"));
 }
