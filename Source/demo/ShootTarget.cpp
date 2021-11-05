@@ -3,6 +3,7 @@
 
 #include "ShootTarget.h"
 #include "MyGameState.h"
+#include <Runtime/Engine/Classes/Kismet/GameplayStatics.h>
 
 // Sets default values
 AShootTarget::AShootTarget()
@@ -32,7 +33,6 @@ void AShootTarget::NotifyActorBeginOverlap(AActor* OtherActor)
 	if (OtherActor)
 	{
 		Cast<AMyGameState>(GetWorld()->GetGameState())->Score++;
-		//UGameplayStatics::Spawn
 	}
 }
 
