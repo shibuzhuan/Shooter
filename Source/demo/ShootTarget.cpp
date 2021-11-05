@@ -32,6 +32,7 @@ void AShootTarget::NotifyActorBeginOverlap(AActor* OtherActor)
 	if (OtherActor)
 	{
 		Cast<AMyGameState>(GetWorld()->GetGameState())->Score++;
+		//UGameplayStatics::Spawn
 	}
 }
 

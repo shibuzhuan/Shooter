@@ -24,7 +24,7 @@ void AdemoGameMode::Tick(float DeltaSeconds)
 	AMyGameState* GS = GetGameState<AMyGameState>();
 	if (GS)
 	{
-		if (GS->Score > 3)
+		if (GS->Score >= 10)
 		{
 			OnVictory();
 		}
